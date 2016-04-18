@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   get "/asciis/new", to: "asciis#new"
   post "/asciis", to: "asciis#create"
+
+  get "/flipsums/new", to: "flipsums#new"
+  post "/flipsums", to: "flipsums#create"
 end

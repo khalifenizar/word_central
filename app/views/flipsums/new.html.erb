@@ -1,0 +1,27 @@
+<h1>Word Central</h1>
+
+<h2>
+  Generate placeholder text from
+  <i>The Godfather</i>
+</h2>
+
+<form action="/flipsums" method="post">
+  <div>
+    <label for="flipsum_amount">Amount:</label>
+    <input type="number" name="flipsum[amount]" id="flipsum_amount">
+  </div>
+
+  <div>
+    <label for="flipsum_type">Type:</label>
+    <select name="flipsum[type]" id="flipsum_type">
+      <option>paragraphs</option>
+      <option>words</option>
+    </select>
+  </div>
+
+  <button type="submit">
+    Generate text
+  </button>
+
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+</form>
